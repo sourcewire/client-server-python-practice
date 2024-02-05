@@ -16,7 +16,7 @@ def server_program():
             #if data is not recieved
             break
         print("From client: " + str(data))
-        data = inpit(' -> ')
+        data = input(' -> ')
         conn.send(data.encode()) #send data to client
 
     conn.close() #close connection
